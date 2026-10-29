@@ -1,0 +1,29 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Injection scan
+        run: |
+          python3 - << 'PY'
+          import os, sys
+          forbidden = ["eval(", "exec(", "<script", "javascript:"]
+          hits = []
+          for root, _, files in os.walk("."):
+              if ".git" in root: continue
+              for f in files:
+                  if f.endswith((".svg", ".html", ".md", ".yml")):
+                      path = os.path.join(root, f)
+                      text = open(path, encoding="utf-8", errors="ignore").read().lower()
+                      for pat in forbidden:
+                          if pat in text:
+                              hits.append(path)
+          if hits:
+              print("FAILED", hits)
+              sys.exit(1)
+          print("INJECTION SCAN PASSED")
+          PY

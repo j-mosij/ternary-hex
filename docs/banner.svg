@@ -1,0 +1,6 @@
+<svg width="480" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="hex banner by j-mosij">
+  <rect width="480" height="80" fill="#050811"/>
+  <polygon points="40,15 62,27 62,51 40,63 18,51 18,27" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+  <circle cx="40" cy="39" r="3" fill="#e2e8f0"/>
+  <text x="90" y="48" fill="#06b6d4" font-family="system-ui,sans-serif" font-size="22">ternary hex · j-mosij</text>
+</svg>

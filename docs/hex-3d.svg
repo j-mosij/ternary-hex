@@ -1,0 +1,10 @@
+<svg width="120" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="isometric hex by j-mosij">
+  <rect width="120" height="100" fill="#050811"/>
+  <!-- top face -->
+  <polygon points="60,20 90,35 60,50 30,35" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+  <!-- left face -->
+  <polygon points="30,35 60,50 60,75 30,60" fill="none" stroke="#0e7490" stroke-width="1.5"/>
+  <!-- right face -->
+  <polygon points="90,35 60,50 60,75 90,60" fill="none" stroke="#67e8f9" stroke-width="1.5"/>
+  <circle cx="60" cy="35" r="3" fill="#e2e8f0"/>
+</svg>

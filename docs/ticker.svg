@@ -1,0 +1,5 @@
+<svg width="320" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="hex ticker by j-mosij">
+  <rect width="320" height="32" fill="#050811"/>
+  <polygon points="16,6 26,10 26,20 16,24 6,20 6,10" fill="none" stroke="#06b6d4" stroke-width="1"/>
+  <text x="36" y="21" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="12">ternary hex automata · open weave · j-mosij</text>
+</svg>
